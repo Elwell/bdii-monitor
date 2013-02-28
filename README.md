@@ -18,12 +18,13 @@ for details.
 To restrict access to the cn=monitor tree, you can either restrict via dn (as
 shown in manpage) or via an IP address range:
 
-  database      monitor
+````  database      monitor
   access to *
     by peername.ip=128.141.0.0%255.255.0.0 read
     by peername.ip=128.142.0.0%255.255.0.0 read
     by peername.ip=137.138.0.0%255.255.0.0 read
     by * none
+````
 
 JSON Output
 -----------
